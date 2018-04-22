@@ -6,7 +6,7 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-p {
+.Shadows {
   color:red;
   font-family:Shadows Into Light;
 }
