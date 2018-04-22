@@ -1,4 +1,12 @@
+
 body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
     background-size: cover;
+    color: rgb(255, 250, 250);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+p {
+  color:red;
+  font-family:Shadows Into Light;
 }
