@@ -16,7 +16,7 @@
 
 @keyframes text-fade {
   from { color: var(--text-color-from) }
-  to { color: var(--text-color-from) }
+  to { color: var(--text-color-to) }
 }
 
 
