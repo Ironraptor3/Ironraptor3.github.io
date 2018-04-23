@@ -46,6 +46,7 @@ body {
 }
 
 p {
+  margin: 0;
   font-family: Lato;
   font-weight: bold;
   
