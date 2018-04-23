@@ -22,6 +22,7 @@
 }
 
 body {
+  background-size: cover;
   background-color: var(--bg-color-from);
   animation-name: fade-in-bg;
   animation-delay: var(--anim-delay);
