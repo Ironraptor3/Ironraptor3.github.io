@@ -17,8 +17,11 @@
   to {opacity: 1.0}
 }
 
-.img {
+body::after {
+  background: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
   opacity: 1.0;
+  position: absolute;
+  z-index: -1;
   animation-name: fade-out;
   animation-delay: var(--anim-delay);
   animation-duration: var(--anim-dura);
@@ -30,6 +33,7 @@
 
 body {
   background-color: var(--bg-color);
+  position: relative;
 }
 
 p {
