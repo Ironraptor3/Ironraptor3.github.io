@@ -18,7 +18,7 @@
 }
 
 body::after {
-  background: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
+  background-image: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
   opacity: 1.0;
   position: absolute;
   z-index: 1;
