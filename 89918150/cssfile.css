@@ -17,11 +17,10 @@
   to {opacity: 1.0}
 }
 
-body::after {
+body {
+  background-color: var(--bg-color);
   background-image: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
   opacity: 1.0;
-  position: absolute;
-  z-index: 1;
   animation-name: fade-out;
   animation-delay: var(--anim-delay);
   animation-duration: var(--anim-dura);
@@ -31,17 +30,12 @@ body::after {
   animation-direction: forwards;
 }
 
-body {
-  background-color: var(--bg-color);
-  position: relative;
-}
-
 p {
   font-family: Lato;
   font-weight: bold;
   color: var(--text-color);
-  opacity: 0.0;
-  animation-name: fade-in;
+  opacity: 1.0;
+  animation-name: fade-out;
   animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-out;
