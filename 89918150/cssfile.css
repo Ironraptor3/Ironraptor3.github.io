@@ -21,7 +21,8 @@
 
 
 body {
-  background-image: url("https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
+  background-size: cover;
   background-color: var(--bg-color-from);
   animation-name: bg-fade;
   animation-delay: var(--anim-delay);
