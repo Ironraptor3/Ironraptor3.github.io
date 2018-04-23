@@ -3,7 +3,16 @@
 body {
   background-color: rgb(0,0,0);
 }
+
+@keyframes fade-in {
+  from { color: body.background-color}
+  to { color: rgb(43, 253, 163 } 
+}
 p {
   font-family: Lato;
-  color: rgb(43, 253, 163);
+  color: body.background-color;
+  animation-name: fade-in;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
