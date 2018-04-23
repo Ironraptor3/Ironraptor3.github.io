@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:bold');
 
 :root {
-  --bg-color: rgb(0,0,0);
+  --bg-color: rgb(50,50,50);
   --text-color: rgb(43, 253, 163);
   --anim-delay: 1s;
   --anim-dura: 5s;
