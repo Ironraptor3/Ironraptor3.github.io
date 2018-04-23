@@ -23,7 +23,7 @@
 
 body {
   background-color: var(--bg-color-from);
-  animation-name: fade-in;
+  animation-name: fade-in-bg;
   animation-delay: var(--anim-delay);
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-in;
@@ -34,7 +34,7 @@ p {
   font-family: Lato;
   font-weight: bold;
   color: var(--text-color-from);
-  animation-name: change-text;
+  animation-name: fade-in-text;
   animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-out;
