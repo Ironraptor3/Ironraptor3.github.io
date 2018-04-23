@@ -38,7 +38,7 @@ p {
   font-weight: bold;
   color: var(--text-color-from);
   animation-name: text-fade;
-  animation-delay: 2*var(--anim-delay) + var(--anim-dura);
+  animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
