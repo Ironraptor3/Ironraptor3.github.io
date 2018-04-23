@@ -11,7 +11,7 @@ body {
 
 p {
   font-family: Lato;
-  font-weight: 900;
+  font-weight: bold;
   color: body.background-color;
   animation-name: fade-in;
   animation-delay: 1s;
