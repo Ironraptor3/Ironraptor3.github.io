@@ -19,6 +19,9 @@
 
 body {
   background-color: var(--bg-color);
+}
+
+div {
   background-image: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
   opacity: 1.0;
   animation-name: fade-out;
