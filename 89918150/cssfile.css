@@ -35,7 +35,7 @@ body {
 p {
   font-family: Lato;
   font-weight: bold;
-  color: --text-color-from;
+  color: var(--text-color-from);
   animation-name: text-fade;
   animation-delay: 2*var(--anim-delay) + var(--anim-dura);
   animation-duration: var(--anim-dura);
