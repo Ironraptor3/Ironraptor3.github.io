@@ -1,47 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:bold');
 
 :root {
-  --bg-color: rgb(50,50,50);
-  --text-color-from: rgb(0,0,0);
-  --text-color-to: rgb(43, 253, 163);
+  --background-color-from: rgb(0,0,0,0);
+  --background-color-to: rgb(0, 0, 0,1);
+  --text-color-from: rgb(43,253,163,0);
+  --text-color-to: rgb(43, 253, 163,1);
   --anim-delay: 1s;
   --anim-dura: 5s;
   
   background-image: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
 }
 
-@keyframes change-text {
-  from {color: var(--text-color-from)}
-  to { color: var(--text-color-to) } 
+@keyframes fade-in-text {
+  from {background-color: var(--text-color-from);}
+  to {background-color: var(--text-color-to);}
 }
 
-@keyframes fade-in {
-  from { opacity: 0.0}
-  to {opacity: 1.0}
+@keyframes fade-in-bg {
+  from {background-color: var(--background-color-from);}
+  to {background-color: var(--background-color-to);}
 }
 
 body {
-  background-color: var(--bg-color);
-  opacity: 0.0;
+  background-color: var(--bg-color-from);
   animation-name: fade-in;
   animation-delay: var(--anim-delay);
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-direction: forwards;
 }
 
 p {
   font-family: Lato;
   font-weight: bold;
   color: var(--text-color-from);
-  opacity: 0.0;
   animation-name: change-text;
   animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-direction: forwards;
 }
