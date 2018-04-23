@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:bold');
 
 :root {
-  --bg-color-from: rgb(0,0,0,0);
-  --bg-color-to: rgb(0,0,0,1.0);
+  --bg-color: rgb(0,0,0,1.0);
   --text-color-from: rgb(43, 253, 163, 0.0);
   --text-color-to: rgb(43, 253, 163, 1.0);
   --anim-delay: 1s;
   --anim-dura: 5s;
 }
 
-@keyframes bg-fade {
-  from { background-color: var(--bg-color-from)}
-  to { background-color: var(--bg-color-to) } 
+@keyframes img-fade {
+  from {opacity: 1.0}
+  to { opacity: 0.0 } 
 }
 
 @keyframes text-fade {
@@ -19,22 +18,23 @@
   to { color: var(--text-color-to) }
 }
 
-.background:before {
+.background {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
   background-size: cover;
   position: absolute;
   z-index: 1;
-}
-
-.background {
-  background-color: var(--bg-color-from);
-  animation-name: bg-fade;
+  opacity: 1.0;
+  animation-name: img-fade;
   animation-delay: var(--anim-delay);
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-direction: forwards;
+}
+
+.background:before {
+  background-color: var(--bg-color);
   position: relative;
 }
 
