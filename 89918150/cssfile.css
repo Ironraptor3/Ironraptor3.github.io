@@ -12,8 +12,8 @@
 }
 
 @keyframes fade-in-text {
-  from {background-color: var(--text-color-from);}
-  to {background-color: var(--text-color-to);}
+  from {color: var(--text-color-from);}
+  to {color: var(--text-color-to);}
 }
 
 @keyframes fade-in-bg {
