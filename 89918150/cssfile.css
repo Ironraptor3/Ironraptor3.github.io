@@ -8,6 +8,9 @@
   --anim-delay: 1s;
   --anim-dura: 5s;
   
+  width: 100%;
+  height: 100%;
+  
   background-image: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
 }
 
@@ -24,7 +27,13 @@
 body {
   width: 100%;
   height: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  
   background-color: var(--bg-color-from);
+  
   animation-name: fade-in-bg;
   animation-delay: var(--anim-delay);
   animation-duration: var(--anim-dura);
@@ -35,7 +44,9 @@ body {
 p {
   font-family: Lato;
   font-weight: bold;
+  
   color: var(--text-color-from);
+  
   animation-name: fade-in-text;
   animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
