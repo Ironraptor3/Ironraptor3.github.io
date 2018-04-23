@@ -16,11 +16,8 @@
   from { opacity: 0.0}
   to {opacity: 1.0}
 }
-.background:before {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
+
+.img {
   opacity: 1.0;
   animation-name: fade-out;
   animation-delay: var(--anim-delay);
@@ -31,9 +28,8 @@
   animation-direction: forwards;
 }
 
-.background {
+body {
   background-color: var(--bg-color);
-  position: relative;
 }
 
 p {
