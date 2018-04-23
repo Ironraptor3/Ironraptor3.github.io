@@ -2,14 +2,17 @@
 
 :root {
   --bg-color: rgb(50,50,50);
-  --text-color: rgb(43, 253, 163);
+  --text-color-from: rgb(0,0,0);
+  --text-color-to: rgb(43, 253, 163);
   --anim-delay: 1s;
   --anim-dura: 5s;
+  
+  background-image: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
 }
 
-@keyframes fade-out {
-  from {opacity: 1.0}
-  to { opacity: 0.0 } 
+@keyframes change-text {
+  from {color: var(--text-color-from)}
+  to { color: var(--text-color-to) } 
 }
 
 @keyframes fade-in {
@@ -18,13 +21,9 @@
 }
 
 body {
-  background-color: var(--bg-color);
-}
-
-div {
-  background-image: url('https://media.giphy.com/media/26tPbLsr9oE72erjG/giphy.gif');
-  opacity: 1.0;
-  animation-name: fade-out;
+  background-color: var(--bg-color)
+  opacity: 0.0;
+  animation-name: fade-in;
   animation-delay: var(--anim-delay);
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-in;
@@ -36,9 +35,9 @@ div {
 p {
   font-family: Lato;
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--text-color-from);
   opacity: 0.0;
-  animation-name: fade-in;
+  animation-name: change-text;
   animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-out;
