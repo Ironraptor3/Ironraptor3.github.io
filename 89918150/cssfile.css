@@ -23,7 +23,7 @@
 
 body {
   width: 100%;
-  height: 100%
+  height: 100%;
   background-color: var(--bg-color-from);
   animation-name: fade-in-bg;
   animation-delay: var(--anim-delay);
