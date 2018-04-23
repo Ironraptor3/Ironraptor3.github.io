@@ -34,8 +34,8 @@ p {
   font-family: Lato;
   font-weight: bold;
   color: var(--text-color);
-  opacity: 1.0;
-  animation-name: fade-out;
+  opacity: 0.0;
+  animation-name: fade-in;
   animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-out;
