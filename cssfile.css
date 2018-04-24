@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Amantic+SC');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 .Amantic {
   font-family:Amantic SC;
 }
@@ -9,6 +10,10 @@
 .Shadows {
   color:red;
   font-family:Shadows Into Light;
+}
+
+.Code {
+  font-family: Source Code Pro;
 }
 
 body {
