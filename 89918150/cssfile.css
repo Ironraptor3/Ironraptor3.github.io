@@ -58,3 +58,16 @@ p {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
+a {
+  margin: 0;
+  font-family: Lato;
+  
+  color: var(--text-color-from);
+  
+  animation-name: fade-in-text;
+  animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
+  animation-duration: var(--anim-dura);
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
