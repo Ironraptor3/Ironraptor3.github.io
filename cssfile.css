@@ -21,3 +21,7 @@ body {
     background-size: cover;
     color: rgb(255, 250, 250);
 }
+
+a {
+    color: rgb(250,250,250)
+}
