@@ -25,7 +25,7 @@
   to {color: var(--text-color-to);}
 }
 
-@keyframes fade-in-text {
+@keyframes fade-in-text2 {
   from {color: var(--text2-color-from);}
   to {color: var(--text2-color-to);}
 }
