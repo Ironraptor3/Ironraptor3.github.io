@@ -5,6 +5,8 @@
   --background-color-to: rgb(0, 0, 0,1);
   --text-color-from: rgb(43,253,163,0);
   --text-color-to: rgb(43, 253, 163,1);
+  --text2-color-from: rgb(0,0,0,0);
+  --text2-color-to: rgb(250, 250, 250,1);
   --anim-delay: 1s;
   --anim-dura: 5s;
   
@@ -21,6 +23,11 @@
 @keyframes fade-in-text {
   from {color: var(--text-color-from);}
   to {color: var(--text-color-to);}
+}
+
+@keyframes fade-in-text {
+  from {color: var(--text2-color-from);}
+  to {color: var(--text2-color-to);}
 }
 
 @keyframes fade-in-bg {
@@ -62,10 +69,11 @@ p {
 a {
   margin: 0;
   font-family: Lato;
+  font-size: 8
   
-  color: var(--text-color-from);
+  color: var(--text2-color-from);
   
-  animation-name: fade-in-text;
+  animation-name: fade-in-text2;
   animation-delay: calc(2*var(--anim-delay) + var(--anim-dura));
   animation-duration: var(--anim-dura);
   animation-timing-function: ease-out;
